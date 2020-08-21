@@ -1,7 +1,7 @@
 {
 	"name": "portfolio",
 	"version": "1.0.0",
-	"description": "",
+	"description": "My Project",
 	"main": "index.js",
 	"scripts": {
 		"start": "parcel *.html --open",
@@ -12,7 +12,9 @@
 	"license": "ISC",
 	"dependencies": {
 		"autoprefixer": "^9.8.6",
+		"axios": "^0.19.2",
 		"postcss-cli": "^7.1.1",
+		"regenerator-runtime": "^0.13.7",
 		"tailwindcss": "^1.6.2"
 	}
 }

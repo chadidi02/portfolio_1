@@ -4,17 +4,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+        integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+        crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 
-    <title>hoho</title>
 </head>
 
 <body>
-    <div class="">
-        <h1 class=" text-center text-blue-500  font-bold text-4xl">sohaib chadidi</h1>
-       
-    </div>
 
+    <body class="font-sans">
+
+        <div class="">
+            <nav class="flex fixed items-center justify-between flex-wrap menu z-20 w-full ">
+                <!-- <div class=" ml-10">
+                    <img class=" w-10 h-10 rounded-full float-left " src="img/bruce.jpg" alt="Sohaib Chadidi">
+                    <div class="flex items-center">
+                        <span class="flex-1 py-2 pl-5">@Schadidi02</span>
+                    </div>
+                </div> -->
+                <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto padding"
+                    style="margin-left: 350px;">
+                    <div class="text-sm lg:flex-grow">
+                        <a href="#Overview"
+                            class=" active block border-bottom border-b-2  border-blue-600  mt-4 lg:inline-block lg:mt-0 color mr-4 link ">
+                            Overview
+                        </a>
+                        <a href="" id="post" onclick="addTodo()"
+                            class=" block mt-4 lg:inline-block lg:mt-0 color mr-4 link">
+                            Portfolio
+                        </a>
+                        <a href="#Timeline" class=" block mt-4 lg:inline-block lg:mt-0 color mr-4 link">
+                            Timeline
+                        </a>
+                        <a href="#About" class=" block mt-4 lg:inline-block lg:mt-0 color mr-4 link">
+                            About
+                        </a>
+                        <a href="#Contact" class=" block mt-4 lg:inline-block lg:mt-0 color mr-4 link">
+                            Contact
+                        </a>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+
+        <!-- home -->
+        <div id="Overview" class=" overflow-auto --scroll-body">
+            <div class=" mx-auto h-screen">
+                <div class="flex flex-grow ">
+                    <div class="container mx-auto px-8 ">
+                        <div class="flex  ">
+                            <div class="w-1/4 z-40">
+                                <div class="mb-4 relative">
+                                    <a href=""
+                                        class=" absolute top-0 left-0 right-0 mt-40 ml-48 bg-white h-10 w-10 rounded-full flex justify-center items-center"
+                                        style="box-shadow: 0px 1px 4px -2px rgba(0, 0, 0, 0.25);">
+                                        <i class="fas fa-cog fa-spin text-xl color"></i>
+                                    </a>
+                                    <img class="rounded-full" id="avatar" src="">
+                                </div>
+                                <div class="mb-4">
+                                    <div class="text-3xl font-medium text-grey-darkest">
+                                        <span id="first_name"></span>
+                                        <span id="last_name"></span>
+                                    </div>
+                                    <div id="username" class="text-xl text-grey-dark font-light">
+                                    </div>
+                                </div>
+                                <div class="pb-6 border-b">
+                                    <div id="about" class=" text-sm text-left mt-2">
+
+                                    </div>
+
+                                </div>
+                                <div class="flex items-center text-left py-4 mb-4 border-b">
+                                    <div class="">
+                                        <ul class=" inline-block text-sm">
+                                            <div class="">
+                                                <img class="mr-5 h-4 w-4 inline-block float-left"
+                                                    src="/icons/business-and-trade.svg" alt="">
+                                                <a href="" class="color block my-3">
+                                                    Fevrok
+                                                </a>
+                                            </div>
+
+                                            <div class="">
+                                                <img class="mr-5 h-4 w-4 inline-block float-left" src="/icons/pin.svg"
+                                                    alt="">
+                                                <a id="location" href="" class="color block my-3">
+                                                </a>
+                                            </div>
+                                            <div class="">
+                                                <a href="" class="color block my-3">
+                                                    <img class="mr-5 h-4 w-4 inline-block float-left"
+                                                        src="icons/email.svg" alt="">
+                                                    S.chadidi02@gmail.com
+                                                </a>
+                                            </div>
+                                            <div class="">
+                                                <img class="mr-5 h-4 w-4 inline-block float-left" src="icons/link.svg"
+                                                    alt="">
+                                                <a href="https://www.fevrok.com/" class="color block my-3">
+                                                    fevrok.com
+                                                </a>
+                                            </div>
+                                            <div class="">
+                                                <img class="mr-5 h-4 w-4 inline-block float-left"
+                                                    src="icons/instagram.svg" alt="">
+                                                <a href="" class="color block my-3">
+                                                    instagram
+                                                </a>
+                                            </div>
+                                            <div class="">
+                                                <img class="mr-5 h-4 w-4 inline-block float-left"
+                                                    src="icons/twitter.svg" alt="">
+                                                <a href="" class="color block my-3">
+                                                    twitter
+                                                </a>
+                                            </div>
+                                            <div class="">
+                                                <img class="mr-5 h-4 w-4 inline-block float-left" src="icons/logo.svg"
+                                                    alt="">
+                                                <a href="" class="color block my-3">
+                                                    Github
+                                                </a>
+                                            </div>
+
+                                            <div class="">
+                                                <img class="mr-5 h-4 w-4 inline-block float-left"
+                                                    src="icons/linkedin.svg">
+                                                <a href="" class="color block my-3">
+                                                    linkedin
+                                                </a>
+                                            </div>
+
+                                            <div class="">
+                                                <img class="mr-5 h-4 w-4 inline-block float-left"
+                                                    src="icons/facebook.svg" alt="">
+                                                <a href="" class="color block my-3">
+                                                    facebook
+                                                </a>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <div class="font-medium text-grey-darkest">
+                                        Organizations.
+                                    </div>
+                                    <div class="flex flex-wrap items-center mt-2">
+                                        <div class="m-2">
+                                            <a href="">
+                                                <img class="w-8 h-8 rounded" src="img/logo (1).png">
+                                            </a>
+                                        </div>
+                                        <div class="m-2">
+                                            <a href="">
+                                                <img class="w-8 h-8 rounded" src="img/logo (2).png">
+                                            </a>
+                                        </div>
+
+                                        <div class="m-2">
+                                            <a href="">
+                                                <img class="w-8 h-8 rounded" src="img/logo (3).png">
+                                            </a>
+                                        </div>
+                                        <div class="m-2">
+                                            <a href="">
+                                                <img class="w-8 h-8 rounded" src="img/logo (4).png">
+                                            </a>
+                                        </div>
+                                        <div class="m-2">
+                                            <a href="">
+                                                <img class="w-8 h-8 rounded" src="img/logo(5).png">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full ml-6 home">
+                                <div class=" mt-8 border px-4 py-4 mb-4 -mr-2 rounded">
+
+                                    <div class="flex w-full  text-sm mt-6 mb-2">
+                                        <div class=" font-medium text-2xl ">
+                                            Hello World!
+                                        </div>
+                                        <div class=" ml-5 w-2/5">
+                                            <img class="h-8 w-8 float-left" src="icons/Hi.gif" alt="">
+                                        </div>
+                                    </div>
+                                    <hr class="new2">
+                                    <div class="my-8 mx-5">
+                                        <div class="flex flex-wrap">
+                                            <div class=" w-1/2 px-5">
+                                                <div class="">
+                                                    <a href="">
+                                                        <img class="mr-5 h-4 w-4 inline-block" src="/icons/facebook.svg"
+                                                            alt="">
+                                                    </a>
+                                                    <a href="">
+                                                        <img class="mr-5 h-4 w-4 inline-block"
+                                                            src="/icons/instagram1.svg" alt="">
+                                                    </a>
+                                                    <a href="">
+                                                        <img class="mr-5 h-4 w-4 inline-block" src="/icons/twitter.svg"
+                                                            alt="">
+                                                    </a>
+                                                    <a href="">
+                                                        <img class="mr-5 h-4 w-4 inline-block" src="/icons/linkedin.svg"
+                                                            alt="">
+                                                    </a>
+                                                </div>
+                                                <div id="full_name" class=" text-2xl font-medium">
+                                                    I'am
+                                                </div>
+                                                <br>
+                                                <ul class="list-disc text-sm">
+                                                    <li class="">A JavaScript developer</li>
+                                                    <li class="">
+                                                        Currently working as a back-end developer and on some of my
+                                                        cool side projects
+                                                        based on Web Development and Augmented Reality.
+                                                    </li>
+                                                </ul>
+                                                <div class="mt-5">
+                                                    ⭐ Visit this special webite
+                                                    <a class=" text-blue-600 hover:underline hover:text-blue-700"
+                                                        href="https://www.fevrok.com">Fevrok <i
+                                                            class="fas fa-external-link-alt text-xs"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class=" w-1/2">
+                                                <img src="img/pc.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+            </div>
+        </div>
+    </body>
     <script src="src/index.js"></script>
+    <script src="src/app.js"></script>
 </body>
 
 </html>

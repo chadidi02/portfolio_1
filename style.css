@@ -1,0 +1,72 @@
+body {
+	font-family: "Noto Sans JP", sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 25px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+.color {
+	color: #718096;
+}
+
+.padding {
+	padding-left: 25px;
+}
+.menu {
+	background: #ffffff;
+	box-shadow: 0px 1px 4px -2px rgba(0, 0, 0, 0.25);
+	height: 50px;
+}
+.home {
+	margin-top: 50px;
+}
+.link {
+	padding: 12px 2px;
+}
+.link:hover {
+	color: #0086cc;
+}
+
+a.active {
+	color: #0086cc;
+}
+
+.m-px_20 {
+	margin-top: 20px;
+}
+.my-px_20 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+hr.new2 {
+	border-top: 1px solid #718096;
+	border-radius: 25px;
+}
+
+.w-128 {
+	width: 20rem;
+}
+.-mb-2px {
+	margin: -2px;
+}
+.px-10 {
+	padding-left: 4rem;
+	padding-right: 4rem;
+}
